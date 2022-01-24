@@ -2,6 +2,10 @@
 import pytest
 from search import graph
 
+def test_fail():
+    assert 1 == 2
+
+
 @pytest.fixture
 def test_bfs_traversal():
     """
@@ -11,8 +15,7 @@ def test_bfs_traversal():
     that all nodes are being traversed (ie. returns 
     the right number of nodes, in the right order, etc.)
     """
-    # this test will fail
-    assert 1 == 2
+    pass
 
 def test_bfs():
     """
