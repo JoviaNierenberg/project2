@@ -1,4 +1,4 @@
-![BuildStatus](https://github.com/JoviaNierenberg/project2/actions/workflows/project2/badge.svg?event=push)
+![BuildStatus](https://github.com/JoviaNierenberg/project2/actions/workflows/project2/test.yml/badge.svg?event=push)
 
 # Project 2
 Breadth-first search
