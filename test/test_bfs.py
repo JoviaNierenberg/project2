@@ -12,7 +12,7 @@ def test_bfs_traversal():
     the right number of nodes, in the right order, etc.)
     """
     # this test will fail
-    assert 1==2
+    assert 1 == 2
 
 def test_bfs():
     """

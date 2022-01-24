@@ -23,7 +23,7 @@ class Graph:
         """
         return
 
-def search:
+def search():
     return 1
 
 
