@@ -32,6 +32,7 @@ def test_bfs_traversal(tiny_network):
 
     assert correct_num_nodes and correct_order
 
+
 def test_bfs():
     """
     TODO: Write your unit test for your breadth-first 
@@ -43,4 +44,16 @@ def test_bfs():
     Include an additional test for nodes that are not connected 
     which should return None. 
     """
-    pass
+
+    # create instance of Graph using citation network and path from Atul Butte to a connected paper
+    citation_graph_instance = Graph("data/citation_network.adjlist")
+    butte_33242416_path = citation_graph_instance.bfs('Atul Butte', '33242416')
+
+    # test for correct shortest path
+    correct_shortest_path = butte_33242416_path == ['Atul Butte', '33242416']
+
+    # test for correct handling of nodes that are not connected
+    unconnected = citation_graph_instance.bfs('Atul Butte', 'pineapple') # second node doesn't exist
+    correct_unconnected = unconnected==None
+
+    assert correct_shortest_path and correct_unconnected

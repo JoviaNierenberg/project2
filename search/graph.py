@@ -49,11 +49,11 @@ class Graph:
                         curr_node = end
                         self.path.append(curr_node)
                         while curr_node!=start:
-                            parent = backtrace[curr_node] # identify parent node
+                            parent = self.backtrace[curr_node] # identify parent node
                             self.path.append(parent) # add parent node to path
                             curr_node = parent # set current node to parent node
-                        path.reverse() # reverse direction of path
-                        return path 
+                        self.path.reverse() # reverse direction of path
+                        return self.path 
         
         # If there's no end node, just return a list with the order of traversal
         if end==None:
