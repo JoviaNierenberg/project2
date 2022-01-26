@@ -25,6 +25,3 @@ def test_bfs():
     which should return None. 
     """
     pass
-
-def test_fail():
-    assert 1 == 2
