@@ -2,10 +2,6 @@
 import pytest
 from search import graph
 
-def test_fail():
-    assert 1 == 2
-
-
 @pytest.fixture
 def test_bfs_traversal():
     """
@@ -29,3 +25,6 @@ def test_bfs():
     which should return None. 
     """
     pass
+
+def test_fail():
+    assert 1 == 2
